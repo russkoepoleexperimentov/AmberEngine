@@ -1,3 +1,3 @@
 namespace AmberCore {
-	void sayHello();
+	int createWindow();
 }

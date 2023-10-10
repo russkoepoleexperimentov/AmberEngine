@@ -4,7 +4,7 @@
 int main()
 {
 	std::cout << "hello from amber engine !\n";
-	AmberCore::sayHello();
+	AmberCore::createWindow();
 
 	std::cin.get();
 	return 0;
