@@ -2,9 +2,17 @@ cmake_minimum_required(VERSION 3.12)
 
 set(CORE_PROJECT_NAME AmberEngineCore)
 
+set(CORE_PUBLIC_INCLUDES 
+	includes/AmberEngineCore/Application.hpp
+)
+
+set(CORE_PRIVATE_SOURCES 
+	src/AmberEngineCore/Application.cpp
+)
+
 add_library(${CORE_PROJECT_NAME} STATIC
-	src/AmberEngineCore/Utils/test.cpp
-	includes/AmberEngineCore/Utils/test.hpp
+	${CORE_PUBLIC_INCLUDES}
+	${CORE_PRIVATE_SOURCES}
 )
 
 target_include_directories(${CORE_PROJECT_NAME} PUBLIC includes)

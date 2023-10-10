@@ -1,11 +1,23 @@
 #include <iostream>
-#include "AmberEngineCore/Utils/test.hpp"
+#include <memory>
+#include "AmberEngineCore/Application.hpp"
+
+class EditorApplication : public AmberEngine::Application
+{
+	virtual void on_update() override 
+	{
+		std::cout << "Update frame " << frame++ << std::endl;
+	}
+
+	int frame = 0;
+};
 
 int main()
 {
-	std::cout << "hello from amber engine !\n";
-	AmberCore::createWindow();
+	auto app = std::make_unique<EditorApplication>();
+	
+	int code = app->start(1024, 768, "Amber Editor");
 
 	std::cin.get();
-	return 0;
+	return code;
 }
