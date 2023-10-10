@@ -9,14 +9,21 @@ set(CORE_PUBLIC_INCLUDES
 
 set(CORE_PRIVATE_SOURCES 
 	src/AmberEngineCore/Application.cpp
+	src/AmberEngineCore/Window.cpp
+)
+
+set(CORE_PRIVATE_INCLUDES
+	src/AmberEngineCore/Window.hpp
 )
 
 add_library(${CORE_PROJECT_NAME} STATIC
 	${CORE_PUBLIC_INCLUDES}
+	${CORE_PRIVATE_INCLUDES}
 	${CORE_PRIVATE_SOURCES}
 )
 
 target_include_directories(${CORE_PROJECT_NAME} PUBLIC includes)
+target_include_directories(${CORE_PROJECT_NAME} PRIVATE src)
 target_compile_features(${CORE_PROJECT_NAME} PUBLIC cxx_std_17)
 
 add_subdirectory(../external/glfw ${CMAKE_CURRENT_BINARY_DIR}/glfw)
