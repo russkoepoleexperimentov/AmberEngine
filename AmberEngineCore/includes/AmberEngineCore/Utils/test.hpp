@@ -1,0 +1,3 @@
+namespace AmberCore {
+	void sayHello();
+}
