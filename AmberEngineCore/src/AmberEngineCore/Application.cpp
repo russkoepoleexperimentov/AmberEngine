@@ -3,6 +3,8 @@
 #include "AmberEngineCore/Application.hpp"
 #include <GLFW/glfw3.h>
 
+#include "AmberEngineCore/Log.hpp"
+
 namespace AmberEngine {
 	Application::Application() 
 	{
@@ -16,6 +18,8 @@ namespace AmberEngine {
 
 	int Application::start(unsigned int window_width, unsigned int window_height, const char* title) 
 	{
+        LOG_INFO("Welcome to Amber Engine");
+
         GLFWwindow* window;
 
         /* Initialize the library */
@@ -52,3 +56,4 @@ namespace AmberEngine {
         return 0;
 	}
 }
+
