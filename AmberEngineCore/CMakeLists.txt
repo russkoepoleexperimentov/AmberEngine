@@ -5,6 +5,7 @@ set(CORE_PROJECT_NAME AmberEngineCore)
 set(CORE_PUBLIC_INCLUDES 
 	includes/AmberEngineCore/Application.hpp
 	includes/AmberEngineCore/Log.hpp
+	includes/AmberEngineCore/Event.hpp
 )
 
 set(CORE_PRIVATE_SOURCES 

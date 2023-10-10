@@ -1,6 +1,8 @@
 #pragma once
 #include <memory>
 
+#include "AmberEngineCore/Event.hpp"
+
 namespace AmberEngine {
 	class Application {
 	public:
@@ -18,5 +20,8 @@ namespace AmberEngine {
 
 	private:
 		std::unique_ptr<class Window> m_pWindow;
+
+		EventDispatcher m_event_dispatcher;
+		bool m_bWindowClose = false;
 	};
 }
