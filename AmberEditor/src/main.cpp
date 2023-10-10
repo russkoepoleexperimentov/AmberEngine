@@ -15,6 +15,7 @@ int main()
 	
 	int code = app->start(1024, 768, "Amber Editor");
 
-	std::cin.get();
+	
 	return code;
+	//move-семантика, smart ptr, pragma once
 }
