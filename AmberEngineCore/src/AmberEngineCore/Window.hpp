@@ -1,11 +1,13 @@
 #pragma once
 
 #include "AmberEngineCore/Event.hpp"
+#include "AmberEngineCore/Log.hpp"
+
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
 #include <string>
 #include <functional>
-
-struct GLFWwindow;
 
 namespace AmberEngine {
 	class Window

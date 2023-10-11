@@ -1,7 +1,9 @@
 #pragma once
-#include <memory>
 
 #include "AmberEngineCore/Event.hpp"
+
+#include <memory>
+
 
 namespace AmberEngine {
 	class Application {

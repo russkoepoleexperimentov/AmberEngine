@@ -17,5 +17,5 @@ int main()
 
 	
 	return code;
-	//move-семантика, smart ptr, pragma once
+	//move-семантика, weak_ptr, va_args,va_start и тд
 }

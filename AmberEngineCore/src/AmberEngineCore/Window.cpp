@@ -1,9 +1,4 @@
 #include "AmberEngineCore/Window.hpp"
-#include "AmberEngineCore/Log.hpp"
-
-
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
 
 namespace AmberEngine {
 
