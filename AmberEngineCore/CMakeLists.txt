@@ -11,10 +11,12 @@ set(CORE_PUBLIC_INCLUDES
 set(CORE_PRIVATE_SOURCES 
 	src/AmberEngineCore/Application.cpp
 	src/AmberEngineCore/Window.cpp
+	src/AmberEngineCore/Shader.cpp
 )
 
 set(CORE_PRIVATE_INCLUDES
 	src/AmberEngineCore/Window.hpp
+	src/AmberEngineCore/Shader.hpp
 )
 
 add_library(${CORE_PROJECT_NAME} STATIC
